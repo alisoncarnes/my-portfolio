@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-fluid{
+  margin: 0 !important;
+  background-color: pink;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: auto;
+  text-align:center;
+}
