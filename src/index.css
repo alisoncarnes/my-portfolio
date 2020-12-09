@@ -102,7 +102,7 @@ p{
 @media only screen and (max-width: 600px) {
   .navbar{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Oswald', sans-serif;
   }
 
@@ -123,5 +123,9 @@ p{
 
   p{
     text-align: center;
+  }
+
+  .header  h1{
+    font-size: 50px;
   }
 }
