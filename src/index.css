@@ -12,72 +12,34 @@ code {
     monospace;
 }
 
-/* .container-fluid{
-  margin: 10px auto !important;
-  position: absolute;
-  width: 100% !important;
-  height: 100% !important;
-  height: 100vh !important;
-  width: 100vw !important;
-  overflow: auto;
-} */
-
-html, body, section, div {
+html, body, div {
   height: 100vh;
 }
 
-body {
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 1.25rem;
-  line-height: 150%;
-  text-shadow: 0 2px 2px #b6701e;
+.container-fluid {
+    display: flex;
+    background-color: pink;
 }
 
-article {
-  position: relative;
-  top: 50%;
-  text-align: center;
-  transform: translate(0, -50%);
-  padding: 1rem;
+.left-div{
+  border: 2px solid black;
+  width: 40%;
+  padding: 10px;
 }
 
-h1 {
-  font-size: 1.75rem;
-  margin: 0 0 0.75rem 0;
+.right-div{
+  border: 2px solid black;
+  width: 60%;
+  padding: 10px;
 }
 
-/* Pattern styles */
-.container {
-  display: grid;
-}
 
-.left-half {
-  background: #ff9e2c;
-  grid-column: 1;
-}
 
-.right-half {
-  background: #b6701e;
-  grid-column: 2;
-}
 
 @media only screen and (max-width: 600px) {
-  .container{
+  .container-fluid{
     display: block;
   }
 
-  .left-half{
-    height: 60%;
-  }
-
-  .right-half{
-    margin-top: 0;
-  }
-
-  .right-half h1 {
-    font-size: 1.75rem;
-    top: 0;
-  }
 
 }

@@ -1,26 +1,32 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 class App extends Component {
   render() {
     return (
+    <Router>
+      <div>
 
-      <section className="container">
-        <div className="left-half">
-          <article>
-            <h1>About me</h1>
-            <p>Weekends don't count unless you spend them doing something completely pointless.</p>
-          </article>
-        </div>
-        <div className="right-half">
-          <article>
-            <h1>Portfolio</h1>
-            <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
-          </article>
-        </div>
-      </section>
-
-
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <ul className="navbar-nav mr-auto">
+                <li><Link to={'/'} className="navbar-brand"> Alison Carnes </Link></li>
+                <li><Link to={'/projects'} className="nav-link">Projects</Link></li>
+                <li><Link to={'/resume'} className="nav-link">Resume</Link>
+                </li>
+              </ul>
+              </nav>
+              <hr />
+              <Switch>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/projects' component={Projects} />
+                  <Route path='/resume' component={Resume} />
+              </Switch>
+          </div>
+    </Router>
     );
   }
 }
