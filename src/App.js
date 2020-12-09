@@ -5,9 +5,21 @@ class App extends Component {
   render() {
     return (
 
-        <div className="container-fluid">
-          <h2>My Portfolio</h2>
+      <section className="container">
+        <div className="left-half">
+          <article>
+            <h1>About me</h1>
+            <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+          </article>
         </div>
+        <div className="right-half">
+          <article>
+            <h1>Portfolio</h1>
+            <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+          </article>
+        </div>
+      </section>
+
 
     );
   }
