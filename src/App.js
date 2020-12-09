@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
@@ -11,14 +12,20 @@ class App extends Component {
     <Router>
       <div>
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <ul className="navbar-nav mr-auto">
+        <nav className="navbar">
+              <ul class="nav navbar-nav navbar-left">
                 <li><Link to={'/'} className="navbar-brand"> Alison Carnes </Link></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-center">
                 <li><Link to={'/projects'} className="nav-link">Projects</Link></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
                 <li><Link to={'/resume'} className="nav-link">Resume</Link>
                 </li>
               </ul>
               </nav>
+
+              <Header/>
               <hr />
               <Switch>
                   <Route exact path='/' component={Home} />

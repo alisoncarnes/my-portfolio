@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke !important;
 }
 
 code {
@@ -12,34 +13,115 @@ code {
     monospace;
 }
 
-html, body, div {
-  height: 100vh;
+.navbar{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
 }
 
-.container-fluid {
-    display: flex;
-    background-color: pink;
+a {
+    color: #1B1B1B !important;
 }
 
-.left-div{
-  border: 2px solid black;
-  width: 40%;
-  padding: 10px;
+.navbar-brand{
+  font-size: 1em !important;
 }
 
-.right-div{
-  border: 2px solid black;
+a:link{
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.container{
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.header img{
+  margin-top: 120px;
+  align-content: center;
+}
+
+.header h1{
+  font-size: 80px;
+  color: whitesmoke;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  opacity: 0.8;
+
+}
+
+.header{
+  background-image: url('https://i.ibb.co/nzc263x/portfoliobg.jpg');
+  height: 500px;
+  text-align: center;
+}
+
+.my-photo{
+  border: double 5px white;
+}
+
+h2{
+  font-family: 'Cardo', serif;
+  font-size: 50px !important;
+  color: #303030;
+}
+
+
+
+.col-left{
   width: 60%;
   padding: 10px;
+  background-color: whitesmoke;
 }
 
+.col-right{
+  width:40%;
+  padding: 10px;
+  background-color: whitesmoke;
+}
 
-
+p{
+  font-family: 'Cardo', serif;
+  text-align: left;
+  font-size: 25px;
+  color: #686868;
+}
 
 @media only screen and (max-width: 600px) {
-  .container-fluid{
-    display: block;
+  .navbar{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
   }
 
+  .container{
+    text-align: center;
+  }
 
+  .row{
+    display: block !important;
+  }
+  .col-left{
+    width: 100%;
+  }
+
+  .col-right{
+    width: 100%;
+  }
+
+  p{
+    text-align: center;
+  }
 }
