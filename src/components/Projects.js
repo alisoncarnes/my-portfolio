@@ -38,7 +38,7 @@ class Projects extends Component {
 
                 <div className="project-page__image">
 
-                  <img src="https://i.ibb.co/BNg97zc/mossjobs4.png"/>
+                  <img src="https://i.ibb.co/BNg97zc/mossjobs4.png" className="responsive"/>
 
                 </div>
 
