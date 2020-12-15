@@ -14,7 +14,7 @@ class App extends Component {
 
         <nav className="navbar">
               <ul class="nav navbar-nav navbar-left">
-                <li><Link to={'/'} className="navbar-brand"> Alison Carnes </Link></li>
+                <li><Link to={'/'} className="navbar-brand"> About Me </Link></li>
               </ul>
               <ul class="nav navbar-nav navbar-center">
                 <li><Link to={'/projects'} className="nav-link">Projects</Link></li>
