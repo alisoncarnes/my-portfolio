@@ -14,7 +14,7 @@ class Projects extends Component {
 
             <div className="project-page__image">
 
-              <img src="https://i.ibb.co/3mFMN5h/perrenial.jpg"/>
+              <img src="https://i.ibb.co/3mFMN5h/perrenial.jpg" className="responsive"/>
 
             </div>
 
@@ -65,7 +65,7 @@ class Projects extends Component {
 
               <div className="project-page__image">
 
-                <img src="https://i.ibb.co/NLtrvc6/dailybeer.png"/>
+                <img src="https://i.ibb.co/NLtrvc6/dailybeer.png" className="responsive"/>
 
               </div>
 
