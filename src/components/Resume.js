@@ -3,17 +3,16 @@ import React, { Component } from 'react';
 class Resume extends Component {
   render() {
     return (
-        <div className="container">
+        <div className="custom-container container">
 
           <h2>Resume</h2>
             <div className="empty-div"/>
             <div className="row">
-              <div className="col">
-              <h3>Alison Carnes</h3>
-              </div>
-              <div className="col">
-              attachment to resume here
-              </div>
+            <div className="col">
+              <h3 className="title">Alison Carnes</h3>
+              <h5 className="link"><a href="https://drive.google.com/file/d/1akd2KWLQG2c9jIvWQB2AFaMnAkVLcwQU/view?usp=sharing" className="pdf-link">Alison-Carnes-Resume.pdf</a></h5>
+              <hr/>
+            </div>
             </div>
             <div className="empty-div"/>
             <div className="row">
@@ -28,23 +27,29 @@ class Resume extends Component {
               </div>
             </div>
             <div className="empty-div"/>
-            <h3>Technical Skills</h3>
+            <h4 className="title-sub">Technical Skills</h4>
+            <hr/>
             <div className="empty-div"/>
             <div className="row">
               <div className="col">
-              <h4>Languages:</h4>
-              <p>JavaScript, HTML, CSS, PHP, SQL</p>
+              <h4 className="title-sub">Languages:</h4>
+                <div className="resume-page">
+                  <p>JavaScript, HTML, CSS, PHP, SQL</p>
+                </div>
 
               </div>
               <div className="col">
-              <h4>Frameworks:</h4>
-              <p>React.js, MongoDB, API/Rest APIs, Mongoose ODM, Node.js, GitHub, jQuery</p>
+              <h4 className="title-sub">Frameworks:</h4>
+                <div className="resume-page">
+                  <p>React.js, MongoDB, API/Rest APIs, Mongoose ODM, Node.js, GitHub, jQuery</p>
+                </div>
               </div>
             </div>
             <div className="empty-div"/>
-            <h4>Work Experience:</h4>
+            <h4 className="title-sub">Work Experience:</h4>
+            <hr/>
             <div className="empty-div"/>
-            <h5>Practice of Dr. Steven Shimoyama</h5><p>
+            <h4 className="title-sub">Practice of Dr. Steven Shimoyama</h4><p>
             Marina del Rey, CA<br/>
             Lead X-Ray Technician<br/>
             August '17 - Feb '20<br/>
@@ -58,16 +63,18 @@ class Resume extends Component {
 
 
             <div className="empty-div"/>
-            <h4>Education:</h4>
+            <h4 className="title-sub">Education:</h4>
+            <hr/>
             <div className="empty-div"/>
 
-            <h5>General Assembly</h5>
+            <h4 className="title-sub">General Assembly</h4>
             <p>
             Award winning, industry leading software immersive program with a focus on HTML, CSS, JavaScript, PHP, modern front-end frameworks, back-end web applications and API development with modern programming languages and MVC, and consummation of third-party APIs. GA also focused on collaboration in teams using agile development workflow and widely accepted collaboration practices in Git/Github
             <br/><br/>
             <b>Software Engineering</b><br/>
             August '20 - Nov '20
             </p>
+
         </div>
     );
   }

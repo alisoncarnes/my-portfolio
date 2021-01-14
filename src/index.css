@@ -176,6 +176,31 @@ ion-icon {
   padding: 20px;
 }
 
+.container.custom-container {
+      padding: 0;
+      width: 60% !important;
+}
+
+.title{
+  font-family: 'Oswald', sans-serif;
+  color: #303030
+}
+
+.title-sub{
+  font-family: 'Oswald', sans-serif;
+  color: #303030
+}
+
+.pdf-link{
+  font-family: 'Cardo', serif;
+  color: #686868;
+
+}
+
+.link a{
+  color: #686868;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar{
     text-transform: uppercase;
@@ -234,6 +259,15 @@ ion-icon {
     text-align: center;
     width: 100% !important;
     margin-left: 0 !important;
+  }
+
+  .container.custom-container {
+        padding: 10px;
+        width: 100% !important;
+  }
+
+  .resume-page p{
+    text-align: center;
   }
 
 }
