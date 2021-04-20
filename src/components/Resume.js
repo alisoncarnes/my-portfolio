@@ -10,7 +10,7 @@ class Resume extends Component {
             <div className="row">
             <div className="col">
               <h3 className="title">Alison Carnes</h3>
-              <h5 className="link"><a href="https://drive.google.com/file/d/1akd2KWLQG2c9jIvWQB2AFaMnAkVLcwQU/view?usp=sharing" className="pdf-link">Alison-Carnes-Resume.pdf</a></h5>
+              <h5 className="link"><a href="https://drive.google.com/file/d/1XAfNT5nIzkk5x4Ima7mJ2gbf9QnMJV7f/view?usp=sharing" className="pdf-link">Alison-Carnes-Resume.pdf</a></h5>
               <hr/>
             </div>
             </div>
