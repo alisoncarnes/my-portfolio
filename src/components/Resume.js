@@ -17,7 +17,7 @@ class Resume extends Component {
             <div className="empty-div"/>
             <div className="row">
               <div className="col">
-              <p>I am a software engineer who is interested in leveraging full stack web development and industry leading design tools and technologies to build user-centric products.</p>
+              <p>I am an experienced software engineer interested in leveraging full stack web development and industry leading tools to build user-centric products.</p>
               </div>
               <div className="empty-div"/>
               <div className="col">
